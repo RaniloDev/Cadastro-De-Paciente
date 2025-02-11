@@ -87,20 +87,20 @@ const delet = (key) => {
                     <td>{patientData[id].email}</td>
 
                     <td>
-                      <a
+                      <button
                         className="btn btn-outline-primary"
                         onClick={() => {
                           setIdCurrent(id);
                         }}
                       >
                         <i className="fa-solid fa-pen"></i>
-                      </a>
+                      </button>
 
                       <span> </span>
 
-                      <a className="btn btn-outline-danger" onClick={ () => delet(id)}>
+                      <button className="btn btn-outline-danger" onClick={ () => delet(id)}>
                         <i className="fa-solid fa-trash"></i>
-                      </a>
+                      </button>
                     </td>
                   </tr>
                 ))

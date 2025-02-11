@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Cadastro-De-Paciente/static/css/main.52f08a5c.css",
-    "main.js": "/Cadastro-De-Paciente/static/js/main.94053afc.js",
+    "main.js": "/Cadastro-De-Paciente/static/js/main.1cab95bd.js",
     "index.html": "/Cadastro-De-Paciente/index.html",
     "main.52f08a5c.css.map": "/Cadastro-De-Paciente/static/css/main.52f08a5c.css.map",
-    "main.94053afc.js.map": "/Cadastro-De-Paciente/static/js/main.94053afc.js.map"
+    "main.1cab95bd.js.map": "/Cadastro-De-Paciente/static/js/main.1cab95bd.js.map"
   },
   "entrypoints": [
     "static/css/main.52f08a5c.css",
-    "static/js/main.94053afc.js"
+    "static/js/main.1cab95bd.js"
   ]
 }
