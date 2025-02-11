@@ -32,6 +32,10 @@ const RegisterForm = (props) => {
 
   const manipulateForm = (e) => {
     e.preventDefault();
+    if (!values.fullName) {
+      alert("Por favor, preencha o campo Nome Completo antes de enviar.");
+      return;
+    }
     props.addEdit(values);
     setValues(initialValueFields);
     props.setIdCurrent("");
@@ -56,59 +60,4 @@ const RegisterForm = (props) => {
         />
       </div>
 
-      <div className="row">
-        <div className="form-group input-group col-md-6">
-          <div className="input-group-prepend">
-            <div className="input-group-text">
-              <i className="fa-solid fa-mobile-screen"></i>
-            </div>
-          </div>
-
-          <input
-            className="form-control"
-            placeholder="Telefone"
-            name="phoneNumber"
-            value={values.phoneNumber}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="form-group input-group col-md-6">
-          <div className="input-group-prepend">
-            <div className="input-group-text">
-              <i className="fa-solid fa-envelope"></i>
-            </div>
-          </div>
-
-          <input
-            className="form-control"
-            placeholder="Email"
-            name="email"
-            value={values.email}
-            onChange={handleChange}
-          />
-        </div>
-      </div>
-
-      <div className="form-group">
-        <textarea
-          className="form-control"
-          placeholder="Endereço"
-          name="address"
-          value={values.address}
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="form-group">
-        <input
-          type="submit"
-          value={props.idCurrent === '' ? 'Salvar' : 'Atualizar'}
-          className="btn btn-primary btn-block"
-        />
-      </div>
-    </form>
-  );
-};
-
-export default RegisterForm;
+      <div
