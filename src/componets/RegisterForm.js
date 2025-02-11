@@ -52,6 +52,7 @@ const RegisterForm = (props) => {
           name="fullName"
           value={values.fullName}
           onChange={handleChange}
+          required
         />
       </div>
 
