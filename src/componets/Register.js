@@ -115,7 +115,7 @@ const delet = (key) => {
       </div>
       
       <div>
-      <img className="gov" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSJnrXbjnxhtsswfQUB-4577oIzic_UxYUQ&s"></img>
+      <img alt="logo do governo" className="gov" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSJnrXbjnxhtsswfQUB-4577oIzic_UxYUQ&s"></img>
       </div>
     </div>
   );
